@@ -14,6 +14,7 @@ export default async (to, from, next) => {
   } else {
     if (to.name === 'Login' && store.getters['auth/hasToken']) {
       next({ name: 'Home' })
+      document.title = `${from.name} - Series Wished`
     } else {
       next()
     }
