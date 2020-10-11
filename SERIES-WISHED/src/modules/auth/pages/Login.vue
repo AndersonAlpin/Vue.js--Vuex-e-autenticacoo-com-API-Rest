@@ -35,8 +35,8 @@ import { mapActions } from "vuex";
 export default {
   data: () => ({
     form: {
-      email: 'dlowy12@google.co.uk',
-      password: 'xtPqmEFaip2'
+      email: 'mblader0@umich.edu',
+      password: 'pOKJof0PWZ'
     },
   }),
   methods: {
@@ -45,7 +45,7 @@ export default {
       try {
         await this.ActionDoLogin(this.form)
 
-        this.$router.push({ name: 'home' })
+        this.$router.push({ name: 'Home' })
       } catch (err) {
         alert(err.data ? err.data.message : 'Não foi possível fazer login')
       }
